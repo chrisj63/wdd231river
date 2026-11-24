@@ -93,6 +93,43 @@ button:hover {
   color: white;
   text-align: center;
 }
+
+
+
+/* Modal background */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 1rem;
+}
+
+/* Show modal */
+.modal.open {
+    display: flex;
+}
+
+/* Modal content box */
+.modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 450px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Submitted information */
+#modal-response {
+    background: #e9f0fe;
+    padding: 1rem;
+    border-radius: 8px;
+    line-height: 1.8;
+}
 @media screen and (min-width: 769px) {
   form {
     /* Switch back to 2 columns on desktop */
